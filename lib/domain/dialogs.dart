@@ -1,6 +1,5 @@
+import 'package:breaking_bad_app/presentation/shared/single_button_dialog.dart';
 import 'package:get/get.dart';
-
-import '../presentation/shared/single_button_dialog.dart';
 
 class ErrorDialog {
   static Future<void> show(String error) async {

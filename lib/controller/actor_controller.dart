@@ -1,8 +1,7 @@
 import 'package:breaking_bad_app/data/models/from_api/actor/actor_model.dart';
+import 'package:breaking_bad_app/data/services/actor_service.dart';
+import 'package:breaking_bad_app/internal/locator.dart';
 import 'package:get/get.dart';
-
-import '../data/services/actor_service.dart';
-import '../internal/locator.dart';
 
 class ActorController extends GetxController {
   final _service = locator<ActorService>();

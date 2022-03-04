@@ -1,9 +1,8 @@
+import 'package:breaking_bad_app/data/api/core_api.dart';
 import 'package:breaking_bad_app/data/models/from_api/actor/actor_model.dart';
+import 'package:breaking_bad_app/domain/dialogs.dart';
+import 'package:breaking_bad_app/internal/locator.dart';
 import 'package:flutter/cupertino.dart';
-
-import '../../domain/dialogs.dart';
-import '../../internal/locator.dart';
-import '../api/core_api.dart';
 
 class ActorService {
   final CoreApi _coreApi = locator<CoreApi>();
