@@ -45,8 +45,7 @@ class MyHomePage extends StatelessWidget {
               child: ListTile(
                 onTap: () => Get.to(
                   ActorImageScreen(
-                    image: actorController.actorList[index].img,
-                    name: actorController.actorList[index].name,
+                    id: actorController.actorList[index].charId,
                   ),
                 ),
                 leading: Image.network(

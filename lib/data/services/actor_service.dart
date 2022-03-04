@@ -23,4 +23,20 @@ class ActorService {
       await ErrorDialog.show(result.error!);
     }
   }
+
+  Future<List<ActorsModel>?> getAuthorsById({@required int? id}) async {
+    final url = '${_coreApi.actorsUrl}/$id';
+
+    final result = await _coreApi.getRequest(
+      url,
+    );
+
+    if (result.response != null) {
+      return (result.response as List)
+          .map((x) => ActorsModel.fromJson(x as Map<String, dynamic>))
+          .toList();
+    } else {
+      await ErrorDialog.show(result.error!);
+    }
+  }
 }
