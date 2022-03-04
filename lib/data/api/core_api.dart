@@ -1,6 +1,5 @@
+import 'package:breaking_bad_app/data/models/from_api/api_dto.dart';
 import 'package:dio/dio.dart';
-
-import '../models/from_api/api_dto.dart';
 
 class CoreApi {
   final Dio _dio = Dio();
